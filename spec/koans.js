@@ -250,6 +250,7 @@ describe('destructuring arrays makes shorter code. ', () => {
   it('chained assignments', () => {
     let c, d;
     let [a, b] = [c, d] = [1, 2];
+    
     expect([a, b, c, d]).toEqual([1, 2, 1, 2]);
   });
 
